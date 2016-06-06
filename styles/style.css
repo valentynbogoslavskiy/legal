@@ -658,6 +658,16 @@ map area {
   width: 100%;
   position: relative;
   color: #ffffff; }
+  @media (max-height: 840px) and (min-height: 600px) {
+    .banner {
+      height: 100vh; }
+      .banner .logo-banner {
+        padding-top: 130px; }
+        .banner .logo-banner img {
+          width: 100px;
+          height: auto; }
+        .banner .logo-banner .icons {
+          margin-top: 50px; } }
   .banner:after {
     content: '';
     position: absolute;

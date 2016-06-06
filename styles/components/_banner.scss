@@ -4,6 +4,20 @@
   width: 100%;
   position: relative;
   color: #ffffff;
+  @media (max-height: 840px) and (min-height: 600px){
+    height: 100vh;
+    .logo-banner{
+      padding-top: 130px;
+      img{
+        width: 100px;
+        height: auto;
+      }
+      .icons{
+        margin-top: 50px;
+      }
+    }
+  }
+
   &:after{
     content: '';
     position: absolute;
