@@ -48,6 +48,10 @@ body{
       font-family: $font-second;
       position: relative;
       padding-bottom: 35px;
+      span{
+        opacity: 0;
+        @include trans(opacity);
+      }
       &:after{
         content: '';
         width: 90px;
@@ -62,10 +66,22 @@ body{
         &:after{
           background: #c23e3e;
         }
+        &:before{
+          top: -20px;
+        }
+        span{
+          opacity: 1;
+        }
       }
       &.active{
         &:after{
           background: #c23e3e;
+        }
+        &:before{
+          top: -20px;
+        }
+        span{
+          opacity: 1;
         }
       }
       &:before{
@@ -76,8 +92,9 @@ body{
         left: 0;
         right: 0;
         margin: auto;
-        background: url(../images/sprite1.png) 0 0 no-repeat;
+        background: url(../images/sprite2.png) 0 0 no-repeat;
         top: 0;
+        @include trans(top);
       }
       &.icon1{
          &:before{
@@ -85,7 +102,7 @@ body{
          }
          &:hover{
            &:before{
-             background-position: right 0;
+             background-position: -122px 0;
            }
          }
          &.active{
@@ -100,27 +117,27 @@ body{
         }
         &:hover{
           &:before{
-            background-position: -125px -88px;
+            background-position: -124px -88px;
           }
         }
         &.active{
           &:before{
-            background-position: -125px -88px;
+            background-position: -124px -88px;
           }
         }
       }
       &.icon3{
         &:before{
-          background-position: 6px -196px;
+          background-position: 6px -195px;
         }
         &:hover{
           &:before{
-            background-position: -126px -196px;
+            background-position: -124px -192px;
           }
         }
         &.active{
           &:before{
-            background-position: -126px -196px;;
+            background-position: -124px -192px;
           }
         }
       }
@@ -130,12 +147,12 @@ body{
         }
         &:hover{
           &:before{
-            background-position: -128px -318px;
+            background-position: -125px -314px;
           }
         }
         &.active{
           &:before{
-            background-position: -128px -318px;
+            background-position: -125px -314px;
           }
         }
       }
@@ -145,12 +162,12 @@ body{
         }
         &:hover{
           &:before{
-            background-position: -120px -404px;
+            background-position: -118px -402px;
           }
         }
         &.active{
           &:before{
-            background-position: -120px -404px;
+            background-position: -118px -402px;
           }
         }
       }
@@ -160,18 +177,19 @@ body{
         }
         &:hover{
           &:before{
-            background-position: -120px -514px;
+            background-position: -118px -511px;
           }
         }
         &.active{
           &:before{
-            background-position: -120px -514px;
+            background-position: -118px -511px;
           }
         }
       }
       &:last-child{
         width: 180px;
       }
+
     }
   }
   .text{

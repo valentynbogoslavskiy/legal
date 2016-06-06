@@ -68,6 +68,13 @@ body {
     font-family: "Roboto Slab", sans-serif;
     position: relative;
     padding-bottom: 35px; }
+    #advantages .icons > a span {
+      opacity: 0;
+      -webkit-transition: opacity 300ms ease;
+      -moz-transition: opacity 300ms ease;
+      -o-transition: opacity 300ms ease;
+      -ms-transition: opacity 300ms ease;
+      transition: opacity 300ms ease; }
     #advantages .icons > a:after {
       content: '';
       width: 90px;
@@ -79,8 +86,16 @@ body {
       margin: auto; }
     #advantages .icons > a:hover:after {
       background: #c23e3e; }
+    #advantages .icons > a:hover:before {
+      top: -20px; }
+    #advantages .icons > a:hover span {
+      opacity: 1; }
     #advantages .icons > a.active:after {
       background: #c23e3e; }
+    #advantages .icons > a.active:before {
+      top: -20px; }
+    #advantages .icons > a.active span {
+      opacity: 1; }
     #advantages .icons > a:before {
       content: '';
       position: absolute;
@@ -89,44 +104,49 @@ body {
       left: 0;
       right: 0;
       margin: auto;
-      background: url(../images/sprite1.png) 0 0 no-repeat;
-      top: 0; }
+      background: url(../images/sprite2.png) 0 0 no-repeat;
+      top: 0;
+      -webkit-transition: top 300ms ease;
+      -moz-transition: top 300ms ease;
+      -o-transition: top 300ms ease;
+      -ms-transition: top 300ms ease;
+      transition: top 300ms ease; }
     #advantages .icons > a.icon1:before {
       background-position: 8px 0; }
     #advantages .icons > a.icon1:hover:before {
-      background-position: right 0; }
+      background-position: -122px 0; }
     #advantages .icons > a.icon1.active:before {
       background-position: right 0; }
     #advantages .icons > a.icon2:before {
       background-position: 8px -89px; }
     #advantages .icons > a.icon2:hover:before {
-      background-position: -125px -88px; }
+      background-position: -124px -88px; }
     #advantages .icons > a.icon2.active:before {
-      background-position: -125px -88px; }
+      background-position: -124px -88px; }
     #advantages .icons > a.icon3:before {
-      background-position: 6px -196px; }
+      background-position: 6px -195px; }
     #advantages .icons > a.icon3:hover:before {
-      background-position: -126px -196px; }
+      background-position: -124px -192px; }
     #advantages .icons > a.icon3.active:before {
-      background-position: -126px -196px; }
+      background-position: -124px -192px; }
     #advantages .icons > a.icon4:before {
       background-position: 3px -317px; }
     #advantages .icons > a.icon4:hover:before {
-      background-position: -128px -318px; }
+      background-position: -125px -314px; }
     #advantages .icons > a.icon4.active:before {
-      background-position: -128px -318px; }
+      background-position: -125px -314px; }
     #advantages .icons > a.icon5:before {
       background-position: 12px -404px; }
     #advantages .icons > a.icon5:hover:before {
-      background-position: -120px -404px; }
+      background-position: -118px -402px; }
     #advantages .icons > a.icon5.active:before {
-      background-position: -120px -404px; }
+      background-position: -118px -402px; }
     #advantages .icons > a.icon6:before {
       background-position: 12px -514px; }
     #advantages .icons > a.icon6:hover:before {
-      background-position: -120px -514px; }
+      background-position: -118px -511px; }
     #advantages .icons > a.icon6.active:before {
-      background-position: -120px -514px; }
+      background-position: -118px -511px; }
     #advantages .icons > a:last-child {
       width: 180px; }
   #advantages .text {
