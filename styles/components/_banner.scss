@@ -86,5 +86,9 @@
     margin: auto;
     z-index: 50;
     cursor: pointer;
+    @include trans(bottom);
+    &:hover{
+      bottom: 25px;
+    }
   }
 }

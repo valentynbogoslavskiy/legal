@@ -552,6 +552,26 @@ input[type="tel"],
 input[type="email"],
 input[type="number"] {
   height: 60px; }
+  input[type="text"].placeholder,
+  input[type="tel"].placeholder,
+  input[type="email"].placeholder,
+  input[type="number"].placeholder {
+    color: #fffcf4; }
+  input[type="text"]:-moz-placeholder,
+  input[type="tel"]:-moz-placeholder,
+  input[type="email"]:-moz-placeholder,
+  input[type="number"]:-moz-placeholder {
+    color: #fffcf4; }
+  input[type="text"]::-moz-placeholder,
+  input[type="tel"]::-moz-placeholder,
+  input[type="email"]::-moz-placeholder,
+  input[type="number"]::-moz-placeholder {
+    color: #fffcf4; }
+  input[type="text"]::-webkit-input-placeholder,
+  input[type="tel"]::-webkit-input-placeholder,
+  input[type="email"]::-webkit-input-placeholder,
+  input[type="number"]::-webkit-input-placeholder {
+    color: #fffcf4; }
 
 input[type="submit"] {
   width: 100%; }
@@ -678,6 +698,13 @@ map area {
     right: 0;
     margin: auto;
     z-index: 50;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: bottom 300ms ease;
+    -moz-transition: bottom 300ms ease;
+    -o-transition: bottom 300ms ease;
+    -ms-transition: bottom 300ms ease;
+    transition: bottom 300ms ease; }
+    .banner .icon-down:hover {
+      bottom: 25px; }
 
 /*# sourceMappingURL=style.css.map */

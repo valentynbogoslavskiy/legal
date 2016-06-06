@@ -85,6 +85,9 @@ input[type="email"],
 input[type="number"]{
   height: 60px;
   @extend %base-input;
+  @include placeholder{
+    color:#fffcf4;
+  }
 }
 input[type="submit"]{
   width: 100%;
