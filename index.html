@@ -8,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
-    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
     <script src="form/validate.js"></script>
   </head>
@@ -451,14 +451,15 @@
               </div>
               <h4><span>Зворотній зв'язок</span></h4>
               <p>Зацікавились? Заповніть форму і наші юристи зв’яжуться з вами протягом 20 хвилин.</p>
-              <form id="form" >
-                  <div class="form-item cf">
-                      <input class="name" id="name"  type="text" placeholder="Ваше ім’я">
-                      <input class="email" id="email"  type="email" placeholder="Ваш email">
-                  </div>
-                  <textarea  id="message" placeholder="Опис"></textarea>
-                  <button id="submit" type="submit">відправити</button>
-                  <p id="returnmessage"></p>
+              
+              <form id="form">
+              <p id="returnmessage"></p>
+              <div class="form-item cf">
+              <input type="text" id="name" placeholder="Ваше ім’я" class="name" />
+              <input type="text" id="email" placeholder="Ваш email" class="email"/>
+              </div>
+              <textarea id="message" placeholder="Message......."></textarea>
+              <button type="button" id="submit" >відправити</button>
               </form>
               <a href="#top" class="top">
                   <img src="images/legal-icon.png">
