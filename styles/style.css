@@ -552,7 +552,7 @@ map area {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-bottom: 1px solid #b6b1b0;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   margin: auto;

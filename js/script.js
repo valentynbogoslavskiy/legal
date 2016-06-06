@@ -22,7 +22,7 @@ $(document).ready(function() {
         if( target.length ) {
             event.preventDefault();
             $('html, body').animate({
-                scrollTop: target.offset().top-100
+                scrollTop: target.offset().top
             }, 500);
         }
     });
@@ -34,7 +34,7 @@ $(document).ready(function() {
     });
     $('#consultation .box button').click(function(){
         $('html, body').animate({
-            scrollTop: $("#feedback").offset().top-100
+            scrollTop: $("#feedback").offset().top
         }, 500);
     });
     $('header .top-logo').click(function (e) {
@@ -64,6 +64,10 @@ $(document).ready(function() {
         $('#consultation').addClass('active');
         $('#consultation .box').removeClass('active');
         $('.box[data-services="'+watch+'"]').addClass('active');
+        $('html, body').animate({
+            scrollTop: $("#consultation").offset().top
+        }, 500);
+
     });
     $('#post_form button').click(function(e){
         e.preventDefault();
