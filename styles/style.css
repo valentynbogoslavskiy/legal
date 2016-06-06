@@ -594,6 +594,14 @@ input[type="submit"] {
 
 textarea {
   height: 160px; }
+  textarea.placeholder {
+    color: #fffcf4; }
+  textarea:-moz-placeholder {
+    color: #fffcf4; }
+  textarea::-moz-placeholder {
+    color: #fffcf4; }
+  textarea::-webkit-input-placeholder {
+    color: #fffcf4; }
 
 map area {
   outline: none; }

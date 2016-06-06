@@ -94,6 +94,9 @@ input[type="submit"]{
 }
 textarea{
   @extend %base-input;
+  @include placeholder{
+    color:#fffcf4;
+  }
   height: 160px;
 }
 map{
