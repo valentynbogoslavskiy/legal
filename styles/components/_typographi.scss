@@ -1,0 +1,100 @@
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $font-second;
+  line-height: 1.33;
+  margin: 20px 0;
+  font-weight: 400;
+  text-align: center;
+}
+h1{
+  font-size: 54px;
+  margin: 0 0 27px 0;
+}
+h2{
+  font-size: 48px;
+}
+h3{
+  font-size: 38px;
+}
+h4{
+  font-size: 28px;
+  position: relative;
+  text-align: center;
+  margin: 41px 0;
+  letter-spacing: 4px;
+  &:after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background: #d8d4cd;
+  }
+  span{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 20px;
+    background: #fffcf4;
+  }
+}
+strong{
+  font-weight: 600;
+}
+label{
+
+}
+p{
+  font-size: 16px;
+  line-height: 1.33;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+}
+span{
+
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+section{
+  ul{
+    margin-bottom: 54px;
+    li{
+      font-size: 20px;
+      color: $color-first;
+      padding-left: 14px;
+      position: relative;
+      margin-bottom: 17px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &:before{
+        content: '-';
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"]{
+  height: 60px;
+  @extend %base-input;
+}
+input[type="submit"]{
+  width: 100%;
+}
+textarea{
+  @extend %base-input;
+  height: 160px;
+}
+map{
+  area{
+    outline: none;
+  }
+}
