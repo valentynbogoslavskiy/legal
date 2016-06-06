@@ -10,6 +10,7 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
+    <script src="form/validate.js"></script>
   </head>
   <body>
       <div class="load">
@@ -450,15 +451,15 @@
               </div>
               <h4><span>Зворотній зв'язок</span></h4>
               <p>Зацікавились? Заповніть форму і наші юристи зв’яжуться з вами протягом 20 хвилин.</p>
-              <form method="post" id="post_form" >
+              <form id="form" >
                   <div class="form-item cf">
-                      <input class="name" data-required name="name" required type="text" placeholder="Ваше ім’я">
-                      <input class="email" data-required name="email" required type="email" placeholder="Ваш email">
+                      <input class="name" id="name"  type="text" placeholder="Ваше ім’я">
+                      <input class="email" id="email"  type="email" placeholder="Ваш email">
                   </div>
-                  <textarea name="messages" placeholder="Опис"></textarea>
-                  <button type="submit">відправити</button>
+                  <textarea  id="message" placeholder="Опис"></textarea>
+                  <button id="submit" type="submit">відправити</button>
+                  <p id="returnmessage"></p>
               </form>
-              <div id="post_form_success"></div>
               <a href="#top" class="top">
                   <img src="images/legal-icon.png">
                   <img src="images/legal-icon-hover.png">

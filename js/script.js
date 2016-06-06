@@ -1,21 +1,3 @@
-function call() {
-    if($('#post_form input').val()!='' && $('#post_form .email').val()!=''){
-        var msg   = $('#post_form').serialize();
-        $.ajax({
-            type: 'POST',
-            url: '../post.php',
-            data: msg,
-            success: function(data) {
-                alert('Повідомлення надіслано');
-                $('#post_form input').val('');
-                $('#post_form textarea').val('');
-            },
-            error:  function(xhr, str){
-                alert('Возникла ошибка: ' + xhr.responseCode);
-            }
-        });
-    }
-}
 $(document).ready(function() {
     $('header a[href^="#"],.banner a[href^="#"]').on('click', function(event) {
         var target = $( $(this).attr('href') );
@@ -75,11 +57,7 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: $("#google-map").offset().top
         }, 500);
-    });
-    $('#post_form button').click(function(e){
-        e.preventDefault();
-        call();
-    });
+    });    
     $(window).load(function() {
         setTimeout(function() {
             $('.load').remove('.load');
