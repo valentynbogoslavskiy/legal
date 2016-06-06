@@ -730,7 +730,7 @@ map area {
     transition: bottom 300ms ease; }
     .banner .icon-down:hover {
       bottom: 25px; }
-  @media (max-height: 840px) and (min-height: 650px) {
+  @media (max-height: 840px) and (min-height: 600px) {
     .banner {
       height: 100vh; }
       .banner .logo-banner {
@@ -738,7 +738,9 @@ map area {
         .banner .logo-banner img {
           width: 100px;
           height: auto; }
-        .banner .logo-banner .icons {
-          margin-top: 50px; } }
+      .banner .icons {
+        margin-top: 35px; }
+      .banner .text {
+        margin-top: 35px; } }
 
 /*# sourceMappingURL=style.css.map */

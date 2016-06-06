@@ -91,7 +91,7 @@
       bottom: 25px;
     }
   }
-  @media (max-height: 840px) and (min-height: 650px){
+  @media (max-height: 840px) and (min-height: 600px){
     height: 100vh;
     .logo-banner{
       padding-top: 130px;
@@ -99,9 +99,12 @@
         width: 100px;
         height: auto;
       }
-      .icons{
-        margin-top: 50px;
-      }
+    }
+    .icons{
+      margin-top: 35px;
+    }
+    .text{
+      margin-top: 35px;
     }
   }
 }
