@@ -67,7 +67,14 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: $("#consultation").offset().top
         }, 500);
-
+    });
+    $('.contact-info .street').click(function(){
+        var watch=$(this).data('street');
+        $('.google-map iframe').removeClass('active');
+        $('.google-map iframe[data-map="'+watch+'"]').addClass('active');
+        $('html, body').animate({
+            scrollTop: $("#google-map").offset().top
+        }, 500);
     });
     $('#post_form button').click(function(e){
         e.preventDefault();

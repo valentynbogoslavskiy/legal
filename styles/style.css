@@ -407,6 +407,9 @@ body {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
+    #contact-us .contact-info .street {
+      cursor: pointer;
+      display: inline-block; }
 
 #feedback {
   padding: 62px 0;
@@ -454,6 +457,11 @@ body {
     color: rgba(255, 255, 255, 0.3);
     text-decoration: underline; }
 
+.google-map iframe {
+  display: none; }
+  .google-map iframe.active {
+    display: block; }
+
 button, .btn {
   background: #c23e3e;
   -webkit-border-radius: 30px;
@@ -469,6 +477,14 @@ button, .btn {
   -moz-box-shadow: inset 0px -4px 0px #a52b2b;
   box-shadow: inset 0px -4px 0px #a52b2b;
   text-transform: uppercase; }
+  button:hover, .btn:hover {
+    background: #eb4b4b; }
+  button:active, .btn:active {
+    -webkit-transform: translate(0px, 5px);
+    -moz-transform: translate(0px, 5px);
+    -ms-transform: translate(0px, 5px);
+    transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px; }
 
 .close {
   display: inline-block;

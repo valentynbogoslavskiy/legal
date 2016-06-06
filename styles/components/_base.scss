@@ -495,6 +495,10 @@ body{
       -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
+    .street{
+      cursor: pointer;
+      display: inline-block;
+    }
   }
 }
 #feedback{
@@ -562,6 +566,14 @@ body{
     text-decoration: underline;
   }
 }
+.google-map{
+  iframe{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}
 button,.btn{
   background: #c23e3e;
   -webkit-border-radius: $bdrs-btn;
@@ -577,6 +589,13 @@ button,.btn{
   -moz-box-shadow: inset 0px -4px 0px #a52b2b;
   box-shadow: inset 0px -4px 0px #a52b2b;
   text-transform: uppercase;
+  &:hover{
+    background: #eb4b4b;
+  }
+  &:active{
+    @include transform(translate(0px, 5px));
+    box-shadow: 0px 1px 0px 0px;
+  }
 }
 .close{
   display: inline-block;
