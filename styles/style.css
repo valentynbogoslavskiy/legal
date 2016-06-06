@@ -116,7 +116,7 @@ body {
     #advantages .icons > a.icon1:hover:before {
       background-position: -122px 0; }
     #advantages .icons > a.icon1.active:before {
-      background-position: right 0; }
+      background-position: -122px 0; }
     #advantages .icons > a.icon2:before {
       background-position: 8px -89px; }
     #advantages .icons > a.icon2:hover:before {
