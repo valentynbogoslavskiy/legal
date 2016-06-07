@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5,h6{
   text-align: center;
 }
 h1{
-  font-size: 54px;
+  font-size: 48px;
   margin: 0 0 27px 0;
 }
 h2{
@@ -85,19 +85,15 @@ input[type="email"],
 input[type="number"]{
   height: 60px;
   @extend %base-input;
-  @include placeholder{
-    color:#fffcf4;
-  }
+  background: #fffcf4;
 }
 input[type="submit"]{
   width: 100%;
 }
 textarea{
   @extend %base-input;
-  @include placeholder{
-    color:#fffcf4;
-  }
   height: 160px;
+  background: #fffcf4;
 }
 map{
   area{

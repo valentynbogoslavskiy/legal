@@ -52,5 +52,19 @@
     margin-top: 3px;
     cursor: pointer;
   }
-
+  @media (max-width: $media) {
+    padding: 15px 15px;
+    height: 75px;
+    .logo{
+      width: 170px;
+    }
+    li{
+      font-size: 12px;
+      a{
+        &:after{
+          margin-top: 8px;
+        }
+      }
+    }
+  }
 }
