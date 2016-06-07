@@ -427,7 +427,8 @@ body {
     float: left; }
   #feedback .form-item .email {
     float: right; }
-  #feedback button[type=submit] {
+  #feedback button[type=submit],
+  #feedback button[type=button] {
     min-width: 444px;
     margin: 23px 0; }
   #feedback .top {
