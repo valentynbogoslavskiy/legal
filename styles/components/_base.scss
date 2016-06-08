@@ -65,12 +65,6 @@ body{
         margin: auto;
       }
       &:hover{
-        &:after{
-          background: #c23e3e;
-        }
-        span{
-          opacity: 1;
-        }
       }
       &.active{
         &:after{
@@ -438,7 +432,7 @@ body{
     width: 425px;
     float: left;
     text-align: right;
-    padding-top: 5px;
+    padding-top: 26px;
     strong{
       font-weight: 700;
     }

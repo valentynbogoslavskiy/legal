@@ -86,10 +86,6 @@ body {
       left: 0;
       right: 0;
       margin: auto; }
-    #advantages .icons > a:hover:after {
-      background: #c23e3e; }
-    #advantages .icons > a:hover span {
-      opacity: 1; }
     #advantages .icons > a.active:after {
       background: #c23e3e; }
     #advantages .icons > a.active:before {
@@ -363,7 +359,7 @@ body {
     width: 425px;
     float: left;
     text-align: right;
-    padding-top: 5px; }
+    padding-top: 26px; }
     #free-consultation .item-text strong {
       font-weight: 700; }
 
