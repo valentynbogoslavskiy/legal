@@ -615,6 +615,7 @@ map area {
   top: 0;
   width: 100%;
   max-width: 1920px;
+  min-width: 1210px;
   z-index: 5; }
   #header nav {
     float: right;
@@ -649,7 +650,7 @@ map area {
       height: 75px; }
       #header .logo {
         width: 170px; }
-      #header li {
+      #header li a {
         font-size: 12px; }
         #header li a:after {
           margin-top: 8px; } }
