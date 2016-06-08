@@ -697,13 +697,13 @@ map area {
       .banner .icons > div:last-child {
         margin-right: 0; }
     .banner .icons .icon1 {
-      background: url(../images/icon1.png) center 0 no-repeat; }
+      background: url(../images/icon1a.png) center 0 no-repeat; }
     .banner .icons .icon2 {
-      background: url(../images/icon2.png) center 0 no-repeat; }
+      background: url(../images/icon2a.png) center 0 no-repeat; }
     .banner .icons .icon3 {
-      background: url(../images/icon3.png) center 0 no-repeat; }
+      background: url(../images/icon3a.png) center 0 no-repeat; }
     .banner .icons .icon4 {
-      background: url(../images/icon4.png) center 0 no-repeat; }
+      background: url(../images/icon4a.png) center 0 no-repeat; }
     .banner .icons strong {
       font-size: 36px;
       display: block;
